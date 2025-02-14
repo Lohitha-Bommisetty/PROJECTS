@@ -1,0 +1,63 @@
+#include <LiquidCrystal.h>
+#include <Servo.h>
+
+// Initialize the LCD
+LiquidCrystal lcd(4, 5, 6, 7, 8, 9);
+Servo myServo; // Create a Servo object
+
+// Pin Definitions
+const int trigPin = 2 ; // Trigger pin for ultrasonic sensor
+const int echoPin = 3; // Echo pin for ultrasonic sensor
+const int buzzerPin = 10; // Buzzer pin
+const int servoPin = 9; // Servo pin
+
+// Distance threshold (in cm)
+const int distanceThreshold = 20; // Alert if an object is within 20 cm
+
+void setup() {
+    // Initialize the LCD
+    lcd.begin(16, 2);
+    myServo.attach(servoPin); // Attach the servo to the specified pin
+    pinMode(trigPin, OUTPUT);
+    pinMode(echoPin, INPUT);
+    pinMode(buzzerPin, OUTPUT);
+    Serial.begin(9600);
+}
+
+void loop() {
+    for (int angle = 0; angle <= 180; angle += 10) { // Sweep from 0 to 180 degrees
+        myServo.write(angle); // Set the servo position
+        delay(500); // Wait for the servo to reach the position
+        
+        // Clear the trigger
+        digitalWrite(trigPin, LOW);
+        delayMicroseconds(2);
+        
+        // Set the trigger high for 10 microseconds
+        digitalWrite(trigPin, HIGH);
+        delayMicroseconds(10);
+        digitalWrite(trigPin, LOW);
+        
+        // Read the echo pin
+        long duration = pulseIn(echoPin, HIGH);
+        
+        // Calculate the distance
+        int distance = duration * 0.0343 / 2; // Convert to cm
+        
+        // Display the distance on the LCD
+        lcd.clear();
+        lcd.print("Distance: ");
+        lcd.print(distance);
+          lcd.print(" cm");
+        
+        // Check if the distance is below the threshold
+        if (distance < distanceThreshold) {
+            digitalWrite(buzzerPin, HIGH); // Activate buzzer
+        } else {
+            digitalWrite(buzzerPin, LOW); // Deactivate buzzer
+        }
+        
+        delay(500); // Wait before the next measurement
+    }
+}
+
