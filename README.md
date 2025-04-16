@@ -1,8 +1,24 @@
+
 # Tilt Angle Measurement Using MPU6050
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > A project developed under the **SURE Trust – Innovation & Entrepreneurship Hub** to measure tilt angles in real time using the MPU6050 sensor and an Arduino microcontroller. This embedded system application demonstrates motion tracking for use in robotics, gaming, virtual reality, and more.
+
+## 📚 Table of Contents
+
+- [Overview](#-overview)
+- [Objectives](#-objectives)
+- [Technologies Used](#-technologies-used)
+- [Tools & Libraries](#-tools--libraries)
+- [Circuit Connections](#-circuit-connections)
+- [Methodology](#-methodology)
+- [Applications](#-applications)
+- [Results](#-results)
+- [Learning & Reflections](#-learning--reflections)
+- [Future Enhancements](#-future-enhancements)
+- [Duration](#-duration)
+- [License](#-license)
 
 ---
 
@@ -125,4 +141,3 @@ This project focuses on real-time **tilt angle measurement** using the **MPU6050
 ## 📜 License
 
 This project is open-source and available under the [MIT License](LICENSE).
-
