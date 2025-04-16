@@ -11,6 +11,13 @@ This project aims to design and implement a real-time system for accurately meas
 **Embedded Systems and Internet of Things (IoT)**  
 
 
+## 📅 Duration
+
+**18th December 2024 – 16th February 2025**  
+**Mentor:** Mr. Kiran Kumar Reddy (Firmware Engineer, Oben Electric)  
+**Submitted by:** Ms. Lohitha Bommisetty, B.Tech 3rd Year
+
+---
 
 ## 📚 Table of Contents
 
@@ -24,8 +31,7 @@ This project aims to design and implement a real-time system for accurately meas
 - [Results](#-results)
 - [Learning & Reflections](#-learning--reflections)
 - [Future Enhancements](#-future-enhancements)
-- [Duration](#-duration)
-- [License](#-license)
+
 
 ---
 
@@ -137,14 +143,3 @@ This project focuses on real-time **tilt angle measurement** using the **MPU6050
 
 ---
 
-## 📅 Duration
-
-**18th December 2024 – 16th February 2025**  
-**Mentor:** Mr. Kiran Kumar Reddy (Firmware Engineer, Oben Electric)  
-**Submitted by:** Ms. Lohitha Bommisetty, B.Tech 3rd Year
-
----
-
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
