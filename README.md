@@ -14,8 +14,9 @@ This project aims to design and implement a real-time system for accurately meas
 ## 📅 Duration
 
 **18th December 2024 – 16th February 2025**  
+
 **Mentor:** Mr. Kiran Kumar Reddy (Firmware Engineer, Oben Electric)  
-**Submitted by:** Ms. Lohitha Bommisetty, B.Tech 3rd Year
+
 
 ---
 
