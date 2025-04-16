@@ -6,16 +6,14 @@ This project aims to design and implement a real-time system for accurately meas
 
 ---
 
-## 🌐 Domain
+##  Domain
 
 **Embedded Systems and Internet of Things (IoT)**  
 
 
-## 📅 Duration
+##  Period of the project
 
 **18th December 2024 – 16th February 2025**  
-
-**Mentor:** Mr. Kiran Kumar Reddy (Firmware Engineer, Oben Electric)  
 
 
 ---
